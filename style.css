@@ -99,3 +99,6 @@ sup {
   vertical-align: super;
   font-size: 1.2rem;
 }
+input {
+  width: 23rem;
+}
