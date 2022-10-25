@@ -20,7 +20,7 @@ body {
   grid-template-columns: repeat(1, 24.2rem);
   grid-template-rows: 8rem 30rem;
   gap: 0.2rem;
-  border: 0.1rem solid white;
+  
 }
 
 .calculator:nth-child(1) {
@@ -38,50 +38,41 @@ body {
 
 .output-display {
   display: grid;
-  grid-template-columns: 2rem;
-  grid-template-rows: repeat(2, 3.8rem);
+  grid-template-columns: 15rem;
+  grid-template-rows:  7.4rem; 
   background-color: rgb(175, 147, 94);
+  font-size: 2rem;
+  border: 0.2rem solid white;
   justify-content: end;
   justify-items: flex-end;
-  font-size: 1.6rem;
-  border: 2px solid white;
-}
-
-.output-display:first-child {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 1;
-  grid-row-end: 2;
-}
-
-.output-display:last-child {
-  grid-column-start: 1;
-  grid-column-end: 2;
-  grid-row-start: 2;
-  grid-row-end: 3;
+  word-break: break-all;
+  color: rgb(82, 78, 78);
+  font-weight: 600;
 }
 
 .buttons-display {
   display: grid;
-  grid-template-columns: repeat(4, 6rem);
+  grid-template-columns: repeat(4, 5.98rem);
   grid-template-rows: repeat(5, 6rem);
-  gap: 0rem;
-  border: 1px solid white;
+  border: 0.1rem solid white;
 }
 
-.item.operator.span {
+.operator.span {
   grid-column: 3 / span 2;
   color: rgb(103, 148, 103);
   font-size: 2rem;
 }
-
-.item.operator {
-  color: rgb(224, 153, 21);
-  font-weight: 600;
-  font-size: 2rem;
+.spanAC {
+  grid-column: 1 / span 2;
 }
 
-.item.operator.red {
+.operator {
+  color: rgb(224, 153, 21);
+  font-weight: 600;
+  font-size: 2.2rem;
+}
+
+.operator.red {
   color: red;
 }
 
@@ -95,10 +86,5 @@ button:hover {
   background-color: rgb(117, 119, 121);
   cursor: pointer;
 }
-sup {
-  vertical-align: super;
-  font-size: 1.2rem;
-}
-input {
-  width: 23rem;
-}
+
+
