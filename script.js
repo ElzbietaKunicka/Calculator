@@ -1,11 +1,10 @@
 class Calc {
-
   createElement() {
     const calculatorContainer = document.createElement("div");
     calculatorContainer.classList.add("calculator");
     calculatorContainer.id = "calculator";
     this.element = calculatorContainer;
-    document.getElementById("container").append(calculatorContainer); 
+    document.getElementById("container").append(calculatorContainer);
 
     const outputDisplay = document.createElement("div");
     outputDisplay.classList.add("output-display");
@@ -17,44 +16,39 @@ class Calc {
 
     document.getElementById("calculator").append(outputDisplay, buttonDisplay);
 
-    //buttonDisplay-buttons:
+    //buttons:
 
     const buttonAC = document.createElement("button");
     buttonAC.classList.add("operator", "red", "button", "spanAC");
     buttonAC.textContent = "AC";
     buttonAC.id = "all-clear";
-   
 
     const buttonC = document.createElement("button");
     buttonC.classList.add("operator", "button");
     buttonC.id = "clear-last-simbol";
     buttonC.textContent = "C";
-    
 
     const buttonDivision = document.createElement("button");
     buttonDivision.classList.add("operator", "button");
     buttonDivision.id = "division";
     buttonDivision.textContent = "/";
-    
+
     //second button line
 
     const buttonSeven = document.createElement("button");
     buttonSeven.classList.add("number", "button");
     buttonSeven.id = "seven";
     buttonSeven.textContent = "7";
-    buttonSeven.value = "7";
-
+    
     const buttonEight = document.createElement("button");
     buttonEight.classList.add("number", "button");
     buttonEight.id = "eight";
     buttonEight.textContent = "8";
-    buttonEight.value = "8";
-
+    
     const buttonNine = document.createElement("button");
     buttonNine.classList.add("number", "button");
     buttonNine.id = "nine";
     buttonNine.textContent = "9";
-    buttonNine.value = "9";
 
     const buttonMultiplication = document.createElement("button");
     buttonMultiplication.classList.add("operator", "button");
@@ -67,20 +61,17 @@ class Calc {
     buttonFour.classList.add("number", "button");
     buttonFour.id = "four";
     buttonFour.textContent = "4";
-    buttonFour.value = "4";
-
+    
     const buttonFive = document.createElement("button");
     buttonFive.classList.add("number", "button");
     buttonFive.id = "five";
     buttonFive.textContent = "5";
-    buttonFive.value = "5";
 
     const buttonSix = document.createElement("button");
     buttonSix.classList.add("number", "button");
     buttonSix.id = "six";
     buttonSix.textContent = "6";
-    buttonSix.value = "6";
-
+    
     const buttonSubtraction = document.createElement("button");
     buttonSubtraction.classList.add("operator", "button");
     buttonSubtraction.id = "subtraction";
@@ -91,21 +82,18 @@ class Calc {
     const buttonOne = document.createElement("button");
     buttonOne.classList.add("number", "button");
     buttonOne.id = "one";
-    buttonOne.value = "1";
     buttonOne.textContent = "1";
 
     const buttonTwo = document.createElement("button");
     buttonTwo.classList.add("number", "button");
     buttonTwo.id = "two";
     buttonTwo.textContent = "2";
-    buttonTwo.value = "2";
-
+    
     const buttonThree = document.createElement("button");
     buttonThree.classList.add("number", "button");
     buttonThree.id = "three";
     buttonThree.textContent = "3";
-    buttonThree.value = "3";
-
+    
     const buttonAddition = document.createElement("button");
     buttonAddition.classList.add("operator", "button");
     buttonAddition.id = "addition";
@@ -117,16 +105,14 @@ class Calc {
     buttonZero.classList.add("number", "button");
     buttonZero.id = "zero";
     buttonZero.textContent = "0";
-    buttonZero.value = "0";
-
+    
     const buttonComma = document.createElement("button");
     buttonComma.classList.add("operator", "button");
     buttonComma.id = "Comma";
     buttonComma.textContent = ".";
-    buttonComma.value = ".";
 
     const buttonEqual = document.createElement("button");
-    buttonEqual.classList.add( "operator", "span", "button");
+    buttonEqual.classList.add("operator", "span", "button");
     buttonEqual.id = "equal";
     buttonEqual.textContent = "=";
 
